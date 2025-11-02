@@ -16,7 +16,8 @@ app.use(cors({
 app.use(express.json());
 
 // MongoDB Connection
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/bookstore';
+const MONGO_URI = 'mongodb+srv://user:user123@cluster0.ekzy3km.mongodb.net/bookstore?retryWrites=true&w=majority';
+
 
 mongoose.connect(MONGO_URI)
   .then(() => console.log('MongoDB Connected Successfully'))

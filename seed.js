@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 const Book = require('./models/Book');
 
-const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017/bookstore';
+const MONGO_URI = 'mongodb+srv://user:user123@cluster0.ekzy3km.mongodb.net/bookstore?retryWrites=true&w=majority';
 
 const sampleBooks = [
   {
